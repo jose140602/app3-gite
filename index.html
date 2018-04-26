@@ -1,0 +1,289 @@
+﻿<!doctype html>
+<html>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+ <head>
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ 
+  <meta charset="utf-8" />
+  <title>Dia Mundial de la Bicicleta</title>
+  
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema1.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+  
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <!--  <script src="js/acciones.js"></script>  -->
+  <script src="phonegap.js"></script>
+  
+  <style>
+   p{
+	  font-size: 1.4em;
+	  text-align: justify;}
+   #bicis {
+	   list-style: none;}
+	#bicis li {
+		font-size: 1.5em;}
+	#bicis {
+		display: block;
+		text-align:center;}
+	#banner {
+		display: block;
+		text-align:center;}
+  </style>
+
+ </head><body onLoad="MM_preloadImages('imagenes/cleta2.jpg')">
+ 
+ <div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Dia Mundial de la bicicleta</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Banner conmemorativo</h1>
+    <div id="banner">
+    <img src="imagenes/banner.jpg" width="50%" height="50%">
+    </div>
+   </div>
+  </div>
+  <div>
+   <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Historia de la bicicleta</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Uso como medio de transporte</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Tipos de bicicletas</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>5 Marcas importantes de bicicletas</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Por que se celebra el Dia Mundial de la Bicicleta</h2>
+     </a>
+    </li>
+   </ul>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+    <div>
+     <h4>Aplicacion tres</h4>
+     <h4>Jose Luis Franco Aguilar</h4>
+    </div>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Historia</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>Hasta llegar a el primer modelo moderno, el diseño pasó por varias fases. La primera bicicleta, fue fabricada con madera, se llamaba draisina; pues fue inventada por Karl Drais en 1817. No tenía pedales: había que empujarla con los pies en el suelo. Un herrero escocés llamado Kirkpatrick Macmillan creó la primera máquina con pedales y dos ruedas en 1839. En 1861, al francés Ernest Michaux se le ocurrió una original mejora: ubicar los pedales en la rueda delantera.  No triunfó porque se necesitaba mucho equilibrio para manejarla, pero la idea de los pedales conectados a la rueda abrió el camino para llegar a la bicicleta tal y como la usamos actualmente.
+     <br>
+      Para solucionar el problema del equilibrio, en 1873 James Starley propuso una máquina con la rueda delantera mucho más grande que la trasera. 1885, aparece la Safety Bicycle, inventada por John Kemp Starley. Tenía frenos, permitía una postura más natural y el ciclista estaba más cerca del suelo, por lo que las caídas no eran tan peligrosas. Después, se añadieron las ruedas con cámara de aire y la cadena de transmisión conectada a la rueda de atrás. Es la bicicleta moderna. </p>
+    </div>
+    <div>
+     <img src="imagenes/lineabici.jpg">
+    </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion tres, JLFA</h4>
+   </div>
+  </div>
+  
+  
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Como medio de transporte</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>En el mundo se fabrican más de 100 millones de bicicletas anualmente, tres veces más que el número de automóviles, y únicamente en los países desarrollados como, Canadá, Alemania y Holanda así como en China, son tomadas en cuenta como medio de transporte, dándoles la misma prioridad en la planeación y el desarrollo de la infraestructura vial que a autobuses y automóviles.
+Si las personas tuvieran la opción de usar la bicicleta con una infraestructura mínima que protegiera a los ciclistas del peligro de los vehículos, estamos seguros que se incrementaría su uso, no únicamente como una actividad recreativa, sino como un medio de transporte alternativo, eficiente, económico, rápido y no contaminante, cuyo requerimiento de obra pública es insignificante. No se trata de crear un carril reservado para que la gente se pasee los domingos en un horario determinado, hay que crear una red de vías alternas y seguras que permita al ciclista trasladarse de un lado al otro de la cuidad. Sólo los peces y las aves migratorias son más eficientes para transportarse que un hombre sobre una bicicleta.</p>
+    </div>
+    <div>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/cleta2.jpg',1)"><img src="imagenes/cleta1.jpg" width="259" height="194" id="Image9"></a> </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion tres, JLFA</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Tipos</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <ul id="bicis" align="left">
+      <li>Bicicletas de Montaña (MTB)</li>
+      <p>Diseñadas para “fuera de ruta” por lo que son bastante resistentes. Están equipadas con llantas anchas con dibujos marcados para mejorar el agarre en terrenos sueltos. Regularmente usan manubrios rectos o de doble altura.</p>
+      <img src="imagenes/MTB.jpg" width="30%" height="auto">
+      <li>Bicicletas de Ruta</li>
+      <p>Orientadas a pavimento, más ligera que otras bicicletas, dotadas con ruedas más grandes, delgadas y provistas de llantas angostas y con dibujo liso. Las bicis de ruta utilizan manubrios drop-bar.</p>
+      <img src="imagenes/ruta.jpg" width="30%" height="auto">
+      <li>Bicicletas Híbridas</li>
+      <p>Combinan características de bicis de montaña y de ruta. Los cuadros son resistentes y con una geometría que permite adoptar una posición cómoda que permite relajar los brazos y el cuello.</p>
+      <img src="imagenes/hibrida.jpg" width="30%" height="auto">
+      <li>Bicicletas Urbanas</li>
+      <p>Concebidas para la ciudad, por lo que son de construcción bastante solida tanto en su cuadro como en sus ruedas. Están perfectamente adecuadas para soportar las condiciones de una ciudad </p>
+      <img src="imagenes/ciudad.jpg" width="30%" height="auto">
+      <li>Bicicletas plegables</li>
+      <p>La mayoría de estas bicicletas usan ruedas pequeñas, siendo 16 y 20″, aunque es posible encontrar plegables con rodados más convencionales. Casi todas las plegables están diseñadas para uso urbano.</p>
+      <img src="imagenes/plegable.jpg" width="30%" height="auto">
+      <li>MBX</li>
+      <p>Tienen cuadros pequeños y resistentes, ideales para saltos y acrobacias. Estas bicicletas no son eficientes como medio de transporte.</p>
+      <img src="imagenes/MBX.jpg" width="30%" height="auto">
+      <li>Eléctricas</li>
+      <p>Las bicicletas eléctricas son todas aquellas bicis que utilizan un motor para asistir el pedaleo. Su principal ventaja es a la hora de subir pendientes, pedalear contra el viento (hay lugares donde el viento es muy intenso) o para quien tiene que pedalear largas distancias para ir al trabajo y quiere reducir el esfuerzo.</p>
+      <img src="imagenes/electricas.jpg" width="30%" height="auto">
+      <li>Cruisers</li>
+      <p>Diseñadas para trayectos cortos y sobre pavimento preferencialmente. Su geometría y manubrio característico permiten una postura sumamente relajada. Ssuelen ser pesadas y usan llantas anchas lo que las hace poco eficientes en trayectos de más de 10km.</p>
+      <img src="imagenes/cruiser.jpg" width="30%" height="auto">
+     </ul>
+    </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion tres, JLFA</h4>
+   </div>
+  </div>
+  
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Marcas</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>Specialized
+La firma de la “s” es, indiscutiblemente, y por méritos propios, la mejor marca de bicicletas del mundo. A su favor juega la indudable calidad de todos sus productos y el enorme prestigio del que goza entre los usuarios del mundo ciclista. Su cuota de mercado, especialmente en bicicletas de gama media-alta es espectacular y sus ventas por todo el mundo lo atestiguan.</p>
+     <p>Scott
+La marca Suiza sigue creciendo y parece dispuesta a seguir el camino de Specialized ampliando su cartera de productos a prácticamente todo el sector ciclista. La espectacularidad de sus diseños, especialmente en carretera, donde los acabados de algunos modelos son realmente buenos y en los que se puede entrever un minucioso estudio aerodinámico</p>
+     <p>Trek
+Todo un referente a nivel de ventas mundiales con muchos años a la estela de Specialized.
+Es una de las mejores marcas del mercado, siempre ha sido una de las más populares entre los aficionados al mundo del ciclismo. Mas por su proyecto “Project one” que permite al usuario personalizar totalmente su bicicleta, tanto a nivel de componentes como de colores.</p>
+     <p>Giant
+Es el mayor fabricante de bicicletas del mundo. Referente en cuanto a comodidad. Sus bicicletas son tremendamente cómodas y pese a que sus diseños y geometrías no han sido, hasta el momento, demasiado agresivas, siguen gustando a un público más clásico. Giant ha sido pionero en el mundo ciclista, por ejemplo inventando la primera bicicleta de carretera con sloping bajo.</p>
+     <p>Canyon
+Es la única marca de bicicletas que solo vende por internet y que no ofrece sus bicicletas en tienda física. La marca es conocida por prácticamente todos los ciclistas de carretera y la enorme calidad de sus productos goza de una muy buena consideración entre los aficionados y profesionales del sector.</p>
+     </div>
+     <div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/ciudad.jpg" alt="ciudad" title="ciudad" id="wows1_0"/></li>
+		<li><img src="data1/images/cruiser.jpg" alt="cruiser" title="cruiser" id="wows1_1"/></li>
+		<li><img src="data1/images/electricas.jpg" alt="electricas" title="electricas" id="wows1_2"/></li>
+		<li><img src="data1/images/fatbike.jpg" alt="fatbike" title="fatbike" id="wows1_3"/></li>
+		<li><img src="data1/images/hibrida.jpg" alt="hibrida" title="hibrida" id="wows1_4"/></li>
+		<li><img src="data1/images/mbx.jpg" alt="MBX" title="MBX" id="wows1_5"/></li>
+		<li><img src="data1/images/mtb.jpg" alt="MTB" title="MTB" id="wows1_6"/></li>
+		<li><img src="data1/images/plegable.jpg" alt="plegable" title="plegable" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/ruta.jpg" alt="http://wowslider.com/" title="ruta" id="wows1_8"/></a></li>
+		<li><img src="data1/images/cleta2.jpg" alt="cleta2" title="cleta2" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="ciudad"><span><img src="data1/tooltips/ciudad.jpg" alt="ciudad"/>1</span></a>
+		<a href="#" title="cruiser"><span><img src="data1/tooltips/cruiser.jpg" alt="cruiser"/>2</span></a>
+		<a href="#" title="electricas"><span><img src="data1/tooltips/electricas.jpg" alt="electricas"/>3</span></a>
+		<a href="#" title="fatbike"><span><img src="data1/tooltips/fatbike.jpg" alt="fatbike"/>4</span></a>
+		<a href="#" title="hibrida"><span><img src="data1/tooltips/hibrida.jpg" alt="hibrida"/>5</span></a>
+		<a href="#" title="MBX"><span><img src="data1/tooltips/mbx.jpg" alt="MBX"/>6</span></a>
+		<a href="#" title="MTB"><span><img src="data1/tooltips/mtb.jpg" alt="MTB"/>7</span></a>
+		<a href="#" title="plegable"><span><img src="data1/tooltips/plegable.jpg" alt="plegable"/>8</span></a>
+		<a href="#" title="ruta"><span><img src="data1/tooltips/ruta.jpg" alt="ruta"/>9</span></a>
+		<a href="#" title="cleta2"><span><img src="data1/tooltips/cleta2.jpg" alt="cleta2"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+     </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion tres, JLFA</h4>
+   </div>
+  </div>
+  
+  
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>El por que</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+     <p>Todos los años, el 19 de abril se celebra el Día de la Bicicleta.
+Todo se debe a la ciencia, a un científico distraído y a una sustancia que hoy calificamos como una “droga”. El 16 de noviembre de 1938, el químico suizo Albert Hofmann trabajaba en los laboratorios Sandoz ubicados en la ciudad suiza de Basilea. El científico investigaba los derivados del ácido lisérgico y es así como sintetiza por primera vez el LSD, con la intención de usarlo como un estimulante respiratorio. Pero en ese momento, la sustancia sale del espectro de su visión y queda almacenada en un tubo de ensayo.
+
+Cinco años después, el 16 de abril de 1943, Hofmann decide dar una segunda mirada al LSD. Al manipularlo, absorbe por accidente una pequeña cantidad a través de las yemas de los dedos, que son porosas y conectan con diminutos vasos sanguíneos. Tras unos minutos, comprensiblemente alarmado, Hofmann descubre los poderosos efectos alucinógenos del LSD y escribe la experiencia en sus diarios científicos.Tres días después es decir, un día como hoy, el 19 de abril de 1943 Hofmann decide experimentar con la sustancia en sí mismo e ingiere una dosis de 250 microgramos lo cual, hoy lo sabemos, es una dosis muy alta. En menos de una hora, el químico que estaba bajo vigilancia médica reporta severos cambios en su percepción y tiene que ser acompañado por su asistente de regreso a su casa a bordo de una bicicleta. Esta ocasión, la de la primera ingestión intencional de LSD, y del primer trip o viaje deliberado, es conocido como “El día de la bicicleta”</p>
+    </div>
+    <div>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/sust2.jpg',0)"><img src="imagenes/sust1.jpg" width="325" height="155" id="Image10"></a>
+     <br>
+     <a href="https://www.sura.com/blogs/autos/ventajas-bicicleta-medio-transporte.aspx" target="_self"><img src="imagenes/link.jpg"></a>
+     <br>
+     <a href="http://labicikleta.com/dia-mundial-de-la-bicicleta-19-razones-para-celebrar/" target="_self">Razones para usar bicicleta</a>
+     </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+     <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+     <h4>Aplicacion tres, JLFA</h4>
+   </div>
+  </div>
+ </body>
+</html>
