@@ -25,9 +25,9 @@
  <preference name="permissions" value="INTERNET"/>
  
  <allow-intent href="https://*/*" />
- <access origin="https://*/*">
+ <acces origin="https://*/*" />
  <allow-intent href="http://*/*" />
- <access origin="http://*/*">
+ <acces origin="http://*/*">
  <plugin name="cordova-plugin-whitelist" source="npm" />
  
  <!--plugins
@@ -43,4 +43,4 @@
    
    <icon src="res/android/mdpi.png" />
    
-   </widget>
+ </widget>
